@@ -1,10 +1,12 @@
-# import math
+# import math ( вызов библеотеки математики)
 #from rumath import koren
 #from math import sqrt as koren  ( as - копирование из другой библиотеки)
 
 
 print(" Программа для решения квадратных уравнений ")
 bad_data = True
+# используем try если может произойти ошибка в строке !
+# #bad_data - плохие данные
 while bad_data == True:
     try:
         a = int(input("введите число a:"))
@@ -13,9 +15,10 @@ while bad_data == True:
         bad_data = False
     except ValueError:
         print('не перевести к числу')
+# except ValueError используем чтобы  выдало не ошибку, а сообщение.
 
 D = (b * b) - (4 * a * c)
-
+# D - дискриминант
 print(D)
 
 if D > 0:
