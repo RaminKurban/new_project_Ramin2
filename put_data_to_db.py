@@ -6,3 +6,5 @@ cursor = connection.cursor()
 
 cursor.execute("insert into telsprav values('ramin','kurbanov','m','89659874327')")
 connection.commit()
+
+# объеденить файлы put_data  и read_ from и отправить в базу данных из stroki
